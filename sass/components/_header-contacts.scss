@@ -1,0 +1,34 @@
+
+.heder-contacts {
+  display: flex;
+}
+
+.heder-contacts__mail,
+.heder-contacts__tel {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-sekond-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:hover {
+    color: var(--main-brand-color);
+  }
+}
+
+.heder-contacts__link + .heder-contacts__link {
+  margin-left: 50px;
+}
+
+.heder-contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+  &:hover {
+    fill: currentColor;
+  }
+}
