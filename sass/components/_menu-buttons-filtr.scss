@@ -9,6 +9,10 @@
    @media screen and (min-width: 480px) {
     justify-content: flex-start;
   }
+
+   @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .menu--bottom {
@@ -16,14 +20,16 @@
   @media screen and (min-width: 480px) {
     margin-bottom: 40px;;
   }
-}
 
-// .menu__filtr {
-//   margin: 0 8px 0 0px;
-//   &:last-child {
-//     margin: 0;
-//   }
-// }
+  // @media screen and (min-width: 786px) {
+  //   margin-bottom: 30px;;
+  // }
+
+@media screen and (min-width: 1200px) {
+    margin-bottom: 50px;;
+  }
+
+}
 
 .menu__link {
   padding: 6px 22px;

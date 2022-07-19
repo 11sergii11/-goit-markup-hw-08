@@ -80,12 +80,15 @@ a {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -809,6 +812,13 @@ a {
             justify-content: flex-start;
   }
 }
+@media screen and (min-width: 1200px) {
+  .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .menu--bottom {
   margin-bottom: 50px;
@@ -816,6 +826,11 @@ a {
 @media screen and (min-width: 480px) {
   .menu--bottom {
     margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu--bottom {
+    margin-bottom: 50px;
   }
 }
 
