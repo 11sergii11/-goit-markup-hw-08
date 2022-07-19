@@ -80,7 +80,8 @@ a {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 15px;
 }
 @media screen and (max-width: 479px) {
@@ -126,11 +127,20 @@ a {
   letter-spacing: 0.03em;
   color: var(--main-brand-color);
 }
+@media screen and (max-width: 760px) {
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .logo--bottom {
   margin-bottom: 20px;
 }
-
 .logo__footer-color {
   color: var(--main-body-color);
 }
@@ -591,21 +601,69 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+}
+@media screen and (max-width: 760px) {
+  .flex {
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .flex {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer__contacts--right {
-  margin-right: 70px;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts--right {
+    margin-right: 70px;
+  }
 }
 
 .footer__contacts-block {
-  margin-bottom: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 9px;
+}
+@media screen and (max-width: 760px) {
+  .footer__contacts-block {
+    margin-bottom: 60px;
+  }
 }
 
-.footer__contacts-list {
-  margin-bottom: 9px;
+@media screen and (max-width: 760px) {
+  .footer__contacts-list {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .footer__contacts-list:last-child {
@@ -646,6 +704,24 @@ a {
 }
 
 /*-- иконки футера-- */
+@media screen and (max-width: 760px) {
+  .footer-soclink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer-title {
   margin-bottom: 20px;
   font-family: "Roboto";
