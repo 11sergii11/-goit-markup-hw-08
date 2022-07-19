@@ -79,9 +79,29 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (max-width: 479px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .section {
@@ -785,20 +805,51 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+}
+@media screen and (min-width: 480px) {
+  .menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.menu--bottom {
-  margin-bottom: 50px;
+@media screen and (max-width: 479px) {
+  .menu--bottom {
+    margin-bottom: 30px;
+  }
 }
-
-.menu__filtr {
-  margin: 0 8px 0 0px;
+@media screen and (min-width: 480px) {
+  .menu--bottom {
+    margin-bottom: 40px;
+  }
 }
-.menu__filtr:last-child {
-  margin: 0;
+@media screen and (min-width: 768px) {
+  .menu--bottom {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu--bottom {
+    margin-bottom: 50px;
+  }
 }
 
 .menu__link {
@@ -829,21 +880,6 @@ a {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Услуги для бизнеса */
-/* Особенности работы */
-/* Три картинки */
-/* КОМАНДА */
-/* ССЫЛКИ НА СОЦ СЕТИ */
-/* ----Постоянные клиенты---- */
-/* FOTER */
-/*-- иконки футера-- */
-/* Кнопки портфолио */
 /* Портфолио */
 .job-list {
   position: relative;
@@ -852,15 +888,29 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .job-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .job-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .job-project {
   position: relative;
   cursor: pointer;
-  -ms-flex-preferred-size: calc(33.3333333333% - var(--card-projects-gap));
-      flex-basis: calc(33.3333333333% - var(--card-projects-gap));
-  margin-left: var(--card-projects-gap);
-  margin-top: var(--card-projects-gap);
 }
 
 .projekt-link {
@@ -884,6 +934,25 @@ a {
   overflow: hidden;
 }
 
+@media screen and (min-width: 480px) {
+  .projekt-img__pic {
+    width: 450px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projekt-img__pic {
+    width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projekt-img__pic {
+    width: 370px;
+    height: 294px;
+  }
+}
+
 .projekt-text {
   position: absolute;
   top: 0;
@@ -901,6 +970,12 @@ a {
   letter-spacing: 0.03em;
   color: var(--main-body-color);
 }
+@media screen and (min-width: 480px) {
+  .projekt-text {
+    -webkit-transform: translateY(111%);
+            transform: translateY(111%);
+  }
+}
 
 .job-project-box {
   padding: 20px 24px 20px 24px;
@@ -908,21 +983,31 @@ a {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-
-.job-project:nth-child(n+7) {
-  margin-bottom: 0px;
+@media screen and (min-width: 480px) {
+  .job-project-box {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .job-project-box {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .job-project-box {
+    width: 370px;
+  }
 }
 
-.job-project:nth-child(-n+3) {
-  margin-top: 0px;
+@media screen and (min-width: 768px) {
+  .job-project-box--height {
+    height: 147px;
+  }
 }
-
-.job-project:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.job-project:nth-child(3n+1) {
-  margin-left: 0px;
+@media screen and (min-width: 1200px) {
+  .job-project-box--height {
+    height: 100%;
+  }
 }
 
 .job-result {
@@ -1213,4 +1298,18 @@ a {
   background-color: var(--buttom-second-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* Услуги для бизнеса */
+/* Особенности работы */
+/* Три картинки */
+/* КОМАНДА */
+/* ССЫЛКИ НА СОЦ СЕТИ */
+/* ----Постоянные клиенты---- */
+/* FOTER */
+/*-- иконки футера-- */
+/* --Подписка на рассылку-- */
+/* Кнопки портфолио */
+/* Портфолио */
+/* --MODAL-- */
+/* --- MODAL FORMS --- *//*# sourceMappingURL=main.css.map */
