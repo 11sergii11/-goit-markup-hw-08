@@ -3,14 +3,12 @@
 .team {
   background-color: var(--background-second-color);
 }
+
 .team-box {
   display: flex;
   justify-content: center;
-}
-
-.team-box__unit {
-  flex-basis: calc(100% / 4 - var(--card-team-gap));
-  margin-left: var(--card-team-gap);
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team-box__unit {
@@ -19,8 +17,4 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
-}
-
-.team-box__unit:first-child {
-  margin-left: 0px;
 }
