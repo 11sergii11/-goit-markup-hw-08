@@ -1,6 +1,14 @@
-
 .heder-contacts {
   display: flex;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    margin-left: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .heder-contacts__mail,
@@ -12,22 +20,44 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--text-sekond-color);
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:hover {
     color: var(--main-brand-color);
   }
 }
-
+.heder-contacts__mail {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 9px;
+  }
+}
 .heder-contacts__link + .heder-contacts__link {
-  margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 
 .heder-contacts__icon {
   fill: currentColor;
-  margin-right: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+@media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+  
   &:hover {
     fill: currentColor;
   }

@@ -14,8 +14,8 @@
 }
 .logo--bottom {
   @media screen and (max-width: 760px) {
-}
-    margin-bottom: 20px;
+  }
+  margin-bottom: 20px;
 }
 
 .logo__footer-color {
@@ -23,7 +23,12 @@
 }
 
 .logo--right {
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo__header-color {
