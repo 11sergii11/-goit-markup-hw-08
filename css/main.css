@@ -174,7 +174,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .logo--right {
-    margin-right: 88px;
+    margin-right: 86px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -244,13 +244,14 @@ a {
   .heder-contacts {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: 84px;
+    margin-left: 74px;
   }
 }
 @media screen and (min-width: 1200px) {
   .heder-contacts {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin-left: 300px;
   }
 }
 
@@ -316,6 +317,32 @@ a {
 }
 .heder-contacts__icon:hover {
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .heder-contacts__icon--smal-tel {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heder-contacts__icon--smal-tel {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heder-contacts__icon--smal-mail {
+    width: 12px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heder-contacts__icon--smal-mail {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 /* Услуги для бизнеса */
