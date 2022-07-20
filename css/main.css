@@ -154,7 +154,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--main-brand-color);
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1199px) {
   .logo {
     display: -webkit-box;
     display: -ms-flexbox;
