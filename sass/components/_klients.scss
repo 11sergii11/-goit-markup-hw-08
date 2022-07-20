@@ -5,13 +5,10 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.klients__list {
-  margin-right: 30px;
-}
-.klients__list:last-child {
-  margin-right: 0px;
-}
+
 .klients__link {
   display: flex;
   justify-content: center;

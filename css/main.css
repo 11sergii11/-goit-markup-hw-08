@@ -509,15 +509,32 @@ a {
 .mishion {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--sekond-brand-color);
 }
+@media screen and (min-width: 1200px) {
+  .mishion {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .mishion {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
 
-.mishion--bottom {
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .mishion--bottom {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .mishion--bottom {
+    margin-bottom: 30px;
+  }
 }
 
 /* КОМАНДА */
@@ -649,14 +666,9 @@ a {
           justify-content: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.klients__list {
-  margin-right: 30px;
-}
-
-.klients__list:last-child {
-  margin-right: 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .klients__link {
