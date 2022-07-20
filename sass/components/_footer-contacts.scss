@@ -7,17 +7,19 @@
 
 .flex {
   display: flex;
-   @media screen and (max-width: 760px) {
+   @media screen and (max-width: 767px) {
     margin: auto;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
    @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
     align-items: baseline;
     justify-content: flex-start;
   }
@@ -25,6 +27,11 @@
 
 .footer__contacts--right {
   display: block;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }

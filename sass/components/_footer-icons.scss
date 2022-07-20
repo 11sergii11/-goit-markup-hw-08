@@ -1,6 +1,11 @@
 /*-- иконки футера-- */
 
 .footer-soclink{
+  
+  @media screen and (min-width: 768px) {
+    margin-right: 89px;
+  }
+
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
@@ -19,6 +24,19 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-body-color);
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-body-color);
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-soc-link {
