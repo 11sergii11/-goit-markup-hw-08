@@ -430,11 +430,28 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 
-.fors__list {
-  max-width: 270px;
+@media screen and (min-width: 480px) {
+  .fors__list {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fors__list {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fors__list {
+    max-width: 270px;
+  }
 }
 
 .fors__skils {
@@ -464,23 +481,26 @@ a {
 .work {
   padding-top: 0px;
 }
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
 
 .picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .picture__box {
   position: relative;
-}
-
-.picture__box--end {
-  margin-right: 30px;
-}
-
-.picture__box--end:last-child {
-  margin-right: 0px;
 }
 
 .picture__text {
@@ -539,6 +559,8 @@ a {
 
 /* КОМАНДА */
 .team {
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--background-second-color);
 }
 
@@ -560,6 +582,25 @@ a {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 480px) {
+  .team-box__img {
+    width: 450px;
+    height: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-box__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-box__img {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 /* КОМАНДА */

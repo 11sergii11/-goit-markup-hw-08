@@ -2,11 +2,21 @@
 
 .fors {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .fors__list {
-  max-width: 270px;
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
 }
 
 .fors__skils {
@@ -17,7 +27,7 @@
   text-transform: uppercase;
   color: var(--sekond-brand-color);
 }
-.fors__skils--bottom{
+.fors__skils--bottom {
   margin: 0 0 10px 0;
 }
 

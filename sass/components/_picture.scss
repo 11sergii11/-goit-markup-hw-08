@@ -2,22 +2,28 @@
 
 .work {
   padding-top: 0px;
+    @media screen and (max-width: 1199px) {
+    display: none;
+}
 }
 
 .picture {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .picture__box {
   position: relative;
 }
-.picture__box--end {
-  margin-right: 30px;
-}
+// .picture__box--end {
+//   margin-right: 30px;
+// }
 
-.picture__box--end:last-child {
-  margin-right: 0px;
-}
+// .picture__box--end:last-child {
+//   margin-right: 0px;
+// }
 
 .picture__text {
   display: flex;
