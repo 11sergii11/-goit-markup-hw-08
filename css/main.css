@@ -1975,6 +1975,11 @@ a {
   letter-spacing: 0.02em;
   color: var(--main-brand-color);
 }
+@media screen and (max-width: 479px) {
+  .mobile-menu__contacts--tel {
+    font-size: 28px;
+  }
+}
 
 .mobile-menu__contacts--mail {
   font-family: "Roboto";
