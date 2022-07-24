@@ -153,9 +153,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: var(--main-body-color);
 }
 @media screen and (min-width: 767px) {
@@ -181,6 +178,7 @@ a {
 }
 
 .mobile-menu-btn {
+  margin-right: 0px;
   background-color: transparent;
   border: none;
   width: 40px;
@@ -1148,6 +1146,11 @@ a {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 400px) {
+  .input {
+    max-width: 300px;
+  }
+}
 
 .input:hover,
 .input:focus-within {
@@ -1498,6 +1501,12 @@ a {
     height: 609px;
   }
 }
+@media screen and (max-width: 470px) {
+  .modal {
+    max-width: 300px;
+    height: 609px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1574,6 +1583,11 @@ a {
     width: 370px;
   }
 }
+@media screen and (max-width: 470px) {
+  .modal-form-deskr {
+    max-width: 280px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-form-deskr {
     width: 448px;
@@ -1596,6 +1610,11 @@ a {
     width: 370px;
   }
 }
+@media screen and (max-width: 470px) {
+  .modal-form-fild {
+    max-width: 280px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-form-fild {
     width: 448px;
@@ -1616,6 +1635,11 @@ a {
 @media screen and (max-width: 1199px) {
   .modal-form-coments {
     width: 370px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .modal-form-coments {
+    max-width: 280px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1665,6 +1689,11 @@ a {
 @media screen and (max-width: 1199px) {
   .input-wrap {
     width: 370px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .input-wrap {
+    max-width: 280px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1736,6 +1765,11 @@ a {
     letter-spacing: 0.01em;
   }
 }
+@media screen and (max-width: 470px) {
+  .modal-field-contract {
+    max-width: 280px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-field-contract {
     font-size: 14px;
@@ -1750,6 +1784,20 @@ a {
   margin-right: 7px;
   cursor: pointer;
 }
+@media screen and (max-width: 1199px) {
+  .checkbox {
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (max-width: 470px) {
+  .checkbox {
+    font-size: 10px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
 
 .contract {
   font-weight: 400;
@@ -1760,6 +1808,20 @@ a {
           text-decoration-line: underline;
   color: #2196f3;
   cursor: pointer;
+}
+@media screen and (max-width: 1199px) {
+  .contract {
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (max-width: 470px) {
+  .contract {
+    font-size: 10px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .model-form-button {
