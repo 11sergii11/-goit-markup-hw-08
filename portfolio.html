@@ -58,13 +58,15 @@
       </div>
     </header>
 
-    <div class="mobail-header container">
-       <a href="./index.html" class="mobail-logo">Web<span class="logo__header-color">Studio</span></a>
-          <a href="./portfolio.html" class="mobile-menu-btn" data-menu-button>
-            <svg class="mobile-menu-btn" width="24" height="16">
-              <use href="./images/symbol-defs.svg#menu-24px"></use>
+<div class="mobail-header container">
+       <a href="./index.html" class="mobail-logo">Web<span class="logo__header-color">Studio</span></a>    
+       <button class="mobile-menu-btn" type="button"  data-menu-button>
+            <svg  class="mobile-menu-icon" width="24" height="16">
+              <use class="mobile-menu-open" href="./images/symbol-defs.svg#menu-24px"></use>
+            <use class="mobile-menu-close" href="./images/symbol-defs.svg#close-24px"></use>
             </svg>
-          </a>
+       </button>
+
       </div>
     <main>
 
@@ -340,20 +342,15 @@
       </div>
     </footer>
 
- <!-- MOBILE MENU MODUL -->
+   <!-- MOBILE MENU MODUL -->
     <div class=" mobile-menu backdro is-hidde" data-menu>
-      <button type="button" class="modile-close-btn" data-modal-close>
-          <svg class="close-btn" width="19" height="19">
-            <use href="./images/symbol-defs.svg#close-24px"></use>
-          </svg>
-        </button>
 
       <ul class=" mobile-menu__nav list">
         <li class="mobile-menu__nav--item">
-          <a href="./index.html" class="mobile-menu__nav--info">Студия</a>
+          <a href="./index.html" class="mobile-menu__nav--info ">Студия</a>
         </li>
         <li class="mobile-menu__nav--item">
-          <a href="./portfolio.html" class="mobile-menu__nav--info carent">Портфолио</a>
+          <a href="./portfolio.html" class=" carent mobile-menu__nav--info">Портфолио</a>
         </li>
         <li class="mobile-menu__nav--item">
           <a href="#contacts" class="mobile-menu__nav--info">Контакты</a>
@@ -386,7 +383,6 @@
             </ul>
     </div>
 
-    <script src="./js/mobile-menu.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
