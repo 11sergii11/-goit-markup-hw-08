@@ -25,51 +25,51 @@
   @media screen and (max-width: 479px) {
     max-width: 479px;
     max-height: 400px;
-    background-image: url(../img-new/header/header-480.jpg);
+    background-image: url(../img-new/header/header-480.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     //  Retina mobile 350
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img-new/header/header-480-@2x.jpg);
+      background-image: url(../img-new/header/header-480-@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     }
   }
   @media screen and (min-width: 480px) {
     max-width: 480px;
     height: 400px;
-    background-image: url(../img-new/header/header-480.jpg);
+    background-image: url(../img-new/header/header-480.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     //  Retina mobile
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img-new/header/header-480-@2x.jpg);
+      background-image: url(../img-new/header/header-480-@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     }
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
     height: 400px;
-    background-image: url(../img-new/header/header-768.jpg);
+    background-image: url(../img-new/header/header-768.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     // Retin tablet
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img-new/header/header-768-@2x.jpg);
+      background-image: url(../img-new/header/header-768-@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     }
   }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
 
-    background-image: url(../img-new/header/header-1200.jpg);
+    background-image: url(../img-new/header/header-1200.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 
     // Retin desctop
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img-new/header/header-1200-@2x.jpg);
+      background-image: url(../img-new/header/header-1200-@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     }
   }
 }

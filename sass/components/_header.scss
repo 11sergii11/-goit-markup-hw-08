@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   // justify-content: space-between;
+  border-bottom: 1px solid #ececec;
   background-color: var(--main-body-color);
   @media screen and (min-width: 767px) {
     display: none;

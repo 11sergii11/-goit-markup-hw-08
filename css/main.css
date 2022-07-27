@@ -57,6 +57,7 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -153,6 +154,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #ececec;
   background-color: var(--main-body-color);
 }
 @media screen and (min-width: 767px) {
@@ -365,6 +367,8 @@ a {
           align-items: center;
   font-family: "Roboto";
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--text-sekond-color);
@@ -475,48 +479,56 @@ a {
   .wrapper {
     max-width: 479px;
     max-height: 400px;
-    background-image: url(../img-new/header/header-480.jpg);
+    background-image: url(../img-new/header/header-480.jpg), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(../img-new/header/header-480.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
   .wrapper {
-    background-image: url(../img-new/header/header-480-@2x.jpg);
+    background-image: url(../img-new/header/header-480-@2x.jpg), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(../img-new/header/header-480-@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 480px) {
   .wrapper {
     max-width: 480px;
     height: 400px;
-    background-image: url(../img-new/header/header-480.jpg);
+    background-image: url(../img-new/header/header-480.jpg), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(../img-new/header/header-480.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .wrapper {
-    background-image: url(../img-new/header/header-480-@2x.jpg);
+    background-image: url(../img-new/header/header-480-@2x.jpg), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(../img-new/header/header-480-@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 768px) {
   .wrapper {
     max-width: 768px;
     height: 400px;
-    background-image: url(../img-new/header/header-768.jpg);
+    background-image: url(../img-new/header/header-768.jpg), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(../img-new/header/header-768.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .wrapper {
-    background-image: url(../img-new/header/header-768-@2x.jpg);
+    background-image: url(../img-new/header/header-768-@2x.jpg), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(../img-new/header/header-768-@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 1200px) {
   .wrapper {
     max-width: 1600px;
     height: 600px;
-    background-image: url(../img-new/header/header-1200.jpg);
+    background-image: url(../img-new/header/header-1200.jpg), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(../img-new/header/header-1200.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .wrapper {
-    background-image: url(../img-new/header/header-1200-@2x.jpg);
+    background-image: url(../img-new/header/header-1200-@2x.jpg), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(../img-new/header/header-1200-@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 
@@ -636,6 +648,11 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--sekond-brand-color);
+}
+@media screen and (max-width: 767px) {
+  .fors__skils {
+    text-align: center;
+  }
 }
 
 .fors__skils--bottom {
@@ -1462,7 +1479,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--main-body-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .projekt-text {
     -webkit-transform: translateY(120%);
             transform: translateY(120%);
