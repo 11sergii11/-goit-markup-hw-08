@@ -1940,6 +1940,11 @@ a {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
+@media screen and (min-width: 767px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 
 .modile-close-btn {
   position: absolute;

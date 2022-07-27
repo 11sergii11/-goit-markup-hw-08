@@ -16,6 +16,9 @@
   &.is-open{
     transform: translateX(0%);
   }
+  @media screen and (min-width: 767px){
+    display: none;
+  }
 }
 
 .modile-close-btn {
