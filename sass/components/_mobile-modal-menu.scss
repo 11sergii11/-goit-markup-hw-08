@@ -11,12 +11,56 @@
   padding: 48px 40px;
   background-color: var(--main-body-color);
   z-index: 100;
-  transition: 500ms;
+  transition: 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &.is-open{
     transform: translateX(0%);
   }
 }
+
+.modile-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-body-color);
+  transition-property: fill;
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modile-close-btn:hover,
+.modile-close-btn:focus {
+  fill: var(--buttom-second-color);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .mobile-menu__nav {
   margin-bottom: auto;
