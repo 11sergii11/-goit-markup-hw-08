@@ -18,17 +18,21 @@
   align-items: center;
   font-family: 'Roboto';
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.17;
+  // font-size: 14px;
+  // line-height: 1.17;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--text-sekond-color);
 
   @media screen and (min-width: 768px) {
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
   }
 
   transition-property: color;
@@ -47,7 +51,7 @@
 }
 .heder-contacts__link + .heder-contacts__link {
   @media screen and (min-width: 1200px) {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 

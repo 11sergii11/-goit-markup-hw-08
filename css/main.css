@@ -367,8 +367,6 @@ a {
           align-items: center;
   font-family: "Roboto";
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.17;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--text-sekond-color);
@@ -382,10 +380,17 @@ a {
 @media screen and (min-width: 768px) {
   .heder-contacts__mail,
 .heder-contacts__tel {
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heder-contacts__mail,
+.heder-contacts__tel {
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
   }
 }
 .heder-contacts__mail:hover, .heder-contacts__mail:hover,
@@ -402,7 +407,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .heder-contacts__link + .heder-contacts__link {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 
