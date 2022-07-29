@@ -30,7 +30,15 @@
 
   @media screen and (max-width: 400px) {
   max-width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
   }
+  @media screen and (max-width: 318px) {
+  max-width: 270px;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
   letter-spacing: 0.03em;
   background: var(--text-main-color);
   color: var(---main-btn-color);
