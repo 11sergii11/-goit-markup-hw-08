@@ -23,6 +23,8 @@
   justify-content: space-between;
   border-bottom: 1px solid #ececec;
   background-color: var(--main-body-color);
+  background-image: linear-gradient(to right, rgba(9, 9, 182, 0), rgba(214, 215, 230, 0.9));
+  background-size: cover;
   @media screen and (min-width: 767px) {
     display: none;
     max-width: 100%;
@@ -63,14 +65,14 @@
   transform: fill;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-menu-open{
+.mobile-menu-open {
   transform: fill;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--sekond-brand-color);
 }
 .mobile-menu-open:hover,
 .mobile-menu-open:focus {
-fill: var(--main-brand-color);
+  fill: var(--main-brand-color);
 }
 // .mobile-menu-close:focus,.mobile-menu-close:hover {
 // fill: var(--main-brand-color);

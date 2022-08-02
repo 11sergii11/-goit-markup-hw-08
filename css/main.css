@@ -29,6 +29,16 @@ body {
   letter-spacing: 0.03em;
 }
 
+.bg-color {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 218, 233, 0.9)), to(rgba(214, 215, 230, 0.9))), url(../../img-new/background-img/bg-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(218, 218, 233, 0.9), rgba(214, 215, 230, 0.9)), url(../../img-new/background-img/bg-1.jpg);
+}
+
+.bg-img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url(../../img-new/background-img/bg-3.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(../../img-new/background-img/bg-3.jpg);
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -154,6 +164,9 @@ a {
           justify-content: space-between;
   border-bottom: 1px solid #ececec;
   background-color: var(--main-body-color);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(9, 9, 182, 0)), to(rgba(214, 215, 230, 0.9)));
+  background-image: linear-gradient(to right, rgba(9, 9, 182, 0), rgba(214, 215, 230, 0.9));
+  background-size: cover;
 }
 @media screen and (min-width: 767px) {
   .mobail-header {
