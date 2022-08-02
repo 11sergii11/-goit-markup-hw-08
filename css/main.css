@@ -30,8 +30,8 @@ body {
 }
 
 .bg-color {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 218, 233, 0.9)), to(rgba(214, 215, 230, 0.9))), url(../../img-new/background-img/bg-1.jpg);
-  background-image: linear-gradient(to bottom, rgba(218, 218, 233, 0.9), rgba(214, 215, 230, 0.9)), url(../../img-new/background-img/bg-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(235, 235, 235, 0.918)), to(rgba(235, 235, 235, 0.9))), url(../../img-new/background-img/bg-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(235, 235, 235, 0.918), rgba(235, 235, 235, 0.9)), url(../../img-new/background-img/bg-1.jpg);
 }
 
 .bg-img {
@@ -578,14 +578,63 @@ a {
   letter-spacing: 0.06em;
   color: var(--main-body-color);
   cursor: pointer;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
 }
 .order:hover {
   background-color: var(--buttom-second-color);
+  -webkit-transform: scale(1.75);
+          transform: scale(1.75);
 }
 .order:focus {
   cursor: progress;
 }
 
+@-webkit-keyframes animate175 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  70% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes animate175 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  70% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
 /* Особенности работы */
 .feature {
   display: -webkit-box;
@@ -768,6 +817,20 @@ a {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+.team-box__unit:hover {
+  -webkit-transform: scale(1.45);
+          transform: scale(1.45);
 }
 
 @media screen and (min-width: 480px) {
@@ -1288,6 +1351,18 @@ a {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  -webkit-animation-name: change-btn-send;
+          animation-name: change-btn-send;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 @media screen and (max-width: 1199px) {
   .button-send {
@@ -1309,8 +1384,71 @@ a {
 .button-send:hover,
 .button-send:focus {
   background-color: var(--buttom-second-color);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
+@-webkit-keyframes change-btn-send {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  40% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
+  47% {
+    -webkit-transform: translatex(2px);
+            transform: translatex(2px);
+  }
+  50% {
+    -webkit-transform: translatex(-5px);
+            transform: translatex(-5px);
+  }
+  53% {
+    -webkit-transform: translatex(2px);
+            transform: translatex(2px);
+  }
+  60% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
+  100% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+}
+
+@keyframes change-btn-send {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  40% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
+  47% {
+    -webkit-transform: translatex(2px);
+            transform: translatex(2px);
+  }
+  50% {
+    -webkit-transform: translatex(-5px);
+            transform: translatex(-5px);
+  }
+  53% {
+    -webkit-transform: translatex(2px);
+            transform: translatex(2px);
+  }
+  60% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
+  100% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+}
 /* Кнопки портфолио */
 .menu {
   display: -webkit-box;

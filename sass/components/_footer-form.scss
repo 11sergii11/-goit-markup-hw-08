@@ -29,14 +29,14 @@
   padding: 15px;
 
   @media screen and (max-width: 400px) {
-  max-width: 300px;
-  margin-left: 10px;
-  margin-right: 10px;
+    max-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   @media screen and (max-width: 318px) {
-  max-width: 270px;
-  margin-left: 10px;
-  margin-right: 10px;
+    max-width: 270px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   letter-spacing: 0.03em;
@@ -100,6 +100,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  animation-name: change-btn-send;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .button-icon-send {
@@ -111,4 +117,29 @@
 .button-send:hover,
 .button-send:focus {
   background-color: var(--buttom-second-color);
+  animation-play-state: paused;
+}
+
+@keyframes change-btn-send {
+  0% {
+    transform: translatex(0);
+  }
+  40% {
+    transform: translatex(0px);
+  }
+  47% {
+    transform: translatex(2px);
+  }
+  50% {
+    transform: translatex(-5px);
+  }
+  53% {
+    transform: translatex(2px);
+  }
+  60% {
+    transform: translatex(0px);
+  }
+  100% {
+    transform: translatex(0);
+  }
 }
