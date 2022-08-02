@@ -51,14 +51,15 @@
   border-radius: 50%;
   color: var(--main-body-color);
   background: rgba(255, 255, 255, 0.1);
-  transition-property: background-color;
-  transition-duration: 250ms;
+  transition-property: background-color, transform;
+  transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: var(--main-brand-color);
+  transform: scale(1.25);
 }
 
 .footer-soc-list {

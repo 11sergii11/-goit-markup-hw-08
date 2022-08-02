@@ -1188,10 +1188,12 @@ a {
   border-radius: 50%;
   color: var(--main-body-color);
   background: rgba(255, 255, 255, 0.1);
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: background-color, transform;
+  transition-property: background-color, transform, -webkit-transform;
+  -webkit-transition-duration: 350ms;
+          transition-duration: 350ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1199,6 +1201,8 @@ a {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: var(--main-brand-color);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .footer-soc-list {
